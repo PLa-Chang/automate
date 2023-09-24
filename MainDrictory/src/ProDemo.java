@@ -1,3 +1,9 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 /**
  * 服务器列表会放到一个`server.txt`文件	中，
  * 请从`server.txt`文件中读取到服务器列表并发送`http`请求确定服务器上的接收文件服务是否正常，
