@@ -66,6 +66,7 @@ public class ProDemo02 {
             int responseCode = connection.getResponseCode();
 
             // 只要 HTTP 响应码是 200，就表示服务器可达
+            // Http_Ok返回值为200
             return responseCode == HttpURLConnection.HTTP_OK;
         } catch (IOException e) {
             return false;
