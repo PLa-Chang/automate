@@ -25,9 +25,7 @@ public class ProDemo02 {
             while ((line = reader.readLine()) != null) {
                 String url =line;
                 String regex = "^(http|https):\\/\\/([\\w-]+\\.)+[\\w]+(\\/[\\w- ./?%&=]*)?$|^((25[0-5]|2[0-4]\\d|[01]?\\d?\\d)(\\.(25[0-5]|2[0-4]\\d|[01]?\\d?\\d)){3})$";
-                Pattern pattern = Pattern.compile(regex);//用于编译给定的正则表达式，使其可以用于模式匹配
-                Matcher matcher = pattern.matcher(url);//用来对特定的字符串执行匹配操作,创建一个Matcher对象，用于对'url字符串进行正则匹配。
-                if (!matcher.matches()) {
+                if (!url.matches(regex)) {
                     continue;
                 }
                 if (!line.startsWith("https://")){
