@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
  * @Date: 2023/9/24 —— 2023/9/28
  * @goal: 自动化项目
  */
-public class ProDemo02 {
+public class ProDemo {
     private static DeleteTempFile deleteTempFile = null;
     /**
      * 启动服务器线程
@@ -21,10 +21,10 @@ public class ProDemo02 {
     public static void startThread() {
         new Thread(() -> {
             while (true) {
-                synchronized (ProDemo02.class){
+                synchronized (ProDemo.class){
                     try {
                         Thread.sleep(1000);
-                        ProDemo02.detection();
+                        ProDemo.detection();
                     } catch (InterruptedException e) {
                         System.out.println("线程启动失败" + e.getMessage());
                     }

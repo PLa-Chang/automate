@@ -1,7 +1,7 @@
 package com.MainDrictory;
 
 
-import com.automate.ProDemo02;
+import com.automate.ProDemo;
 
 
 /**
@@ -12,6 +12,6 @@ import com.automate.ProDemo02;
  */
 public class Main {
     public static void main(String[] args) {
-        ProDemo02.startThread();
+        ProDemo.startThread();
     }
 }
