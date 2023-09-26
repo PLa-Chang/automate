@@ -13,7 +13,7 @@ import java.time.format.DateTimeFormatter;
  * @Date: 2023/9/24 —— 2023/9/28
  * @goal: 自动化项目
  */
-public class ProDemo02 {
+public class ProDemo {
     private static DeleteTempFile deleteTempFile = null;
     /**
      * 启动服务器线程
